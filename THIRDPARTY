@@ -1,0 +1,23 @@
+Third-Party Attributions & Licenses
+
+====================
+OpenXInput
+====================
+Copyright (C) Nemirtingas
+
+OpenXinput project is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+OpenXinput project is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with OpenXinput project.  If not, see <https://www.gnu.org/licenses/>
+====================
+The above library has been modified to provide additional functionality.
+Modifications may be found at <https://github.com/TheNathannator/OpenXinput/tree/1_4-raw-reports>
+====================
