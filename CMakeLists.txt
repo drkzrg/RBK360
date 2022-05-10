@@ -7,20 +7,25 @@ option(USE_OPENXINPUT
     ON
 )
 
-# Set up executable
-add_executable(RBK360
+# Source files
+list(APPEND EXE
     "source/main.cpp"
 )
 
+# Libraries to use
 list(APPEND LIBS
-    mincore
-    WindowsApp
 )
 
+# Header file locations
 list(APPEND HEADERS
     "source/"
 )
 
+# Compile definitions
+list(APPEND DEFS
+)
+
+# USE_OPENXINPUT option
 if(USE_OPENXINPUT)
     add_subdirectory(
         "OpenXinput/"
@@ -29,23 +34,18 @@ if(USE_OPENXINPUT)
     list(APPEND LIBS
         Xinput1_4
     )
-    
+
     list(APPEND HEADERS
         "OpenXinput/src/"
     )
+
+    list(APPEND DEFS
+        RBK360_USE_OPENXINPUT
+    )
 endif()
 
-target_link_libraries(RBK360
-    PUBLIC
-    ${LIBS}
-)
-
-target_include_directories(RBK360
-    PUBLIC
-    ${HEADERS}
-)
-
-target_compile_definitions(RBK360
-    PUBLIC
-    $<$<BOOL:${USE_OPENXINPUT}>:RBK360_USE_OPENXINPUT>
-)
+# Set up executable
+add_executable(RBK360 ${EXE})
+target_link_libraries(RBK360 PUBLIC ${LIBS})
+target_include_directories(RBK360 PUBLIC ${HEADERS})
+target_compile_definitions(RBK360 PUBLIC ${DEFS})
