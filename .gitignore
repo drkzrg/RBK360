@@ -3,6 +3,7 @@
 /win32
 /win64
 /build
+/out
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles
