@@ -1,4 +1,4 @@
 [submodule "OpenXinput"]
 	path = OpenXinput
 	url = https://github.com/TheNathannator/OpenXinput.git
-	branch = 1_4-raw-reports
+	branch = rbk360
