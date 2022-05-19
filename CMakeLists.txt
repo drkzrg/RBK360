@@ -32,7 +32,7 @@ if(USE_OPENXINPUT)
     )
 
     list(APPEND LIBS
-        Xinput1_4
+        OpenXinput1_4
     )
 
     list(APPEND HEADERS
